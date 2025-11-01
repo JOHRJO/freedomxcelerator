@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="fr" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freedom Xcelerator - Business Automatisé</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        .font-sans {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .pulse-glow {
+            animation: pulseGlow 2s infinite;
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(239, 68, 68, 0.5); }
+            50% { box-shadow: 0 0 30px rgba(239, 68, 68, 0.8); }
+        }
+        
+        .bounce-slow {
+            animation: bounceSlow 3s infinite;
+        }
+        
+        @keyframes bounceSlow {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(45deg, #ef4444, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full bg-white font-sans">
+  <main class="min-h-full"><!-- Bandeau d'alerte urgent -->
+   <div class="bg-gradient-to-r from-red-600 to-orange-500 text-white py-3 px-4 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-black opacity-10"></div>
+    <div class="relative z-10">
+     <p id="alert-message" class="font-bold text-sm md:text-base animate-pulse">⚠️ ATTENTION: Les tarifs augmentent dans 48h - Économisez 67% MAINTENANT! ⚠️</p>
+    </div>
+   </div><!-- Section principale -->
+   <section class="bg-white py-12 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+     <h1 id="main-title" class="text-4xl md:text-6xl lg:text-7xl font-black text-black mb-6 leading-tight tracking-tight">BUSINESS AUTOMATISÉ<br><span class="gradient-text">FAIT POUR VOUS</span></h1>
+     <p id="main-subtitle" class="text-xl md:text-2xl text-gray-700 mb-8 max-w-4xl mx-auto leading-relaxed">Système complet sans vente, sans configuration, sans stress.<br><strong>Nous faisons TOUT pour vous</strong> - Vous récoltez les bénéfices.</p><!-- Box des bonus -->
+     <div class="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl p-8 mb-8 max-w-md mx-auto pulse-glow">
+      <div class="text-center">
+       <p class="text-black font-bold text-lg mb-2">BONUS EXCLUSIFS INCLUS</p>
+       <p id="bonus-amount" class="text-5xl font-black text-black">$179,037</p>
+       <p class="text-black font-semibold">DE VALEUR AJOUTÉE</p>
+      </div>
+     </div><!-- CTA Principal --> <button id="main-cta" class="bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white font-black text-xl md:text-2xl px-12 py-6 rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 bounce-slow" aria-label="Obtenir un accès instantané au programme Freedom Xcelerator"> 🛒 OBTENIR UN ACCÈS INSTANTANÉ </button>
+     <p class="text-gray-600 mt-4 text-sm">✅ Accès immédiat • ✅ Garantie 30 jours • ✅ Support premium</p>
+    </div>
+   </section><!-- Section témoignages -->
+   <section class="bg-gray-50 py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+     <h2 class="text-4xl font-black text-center text-black mb-12">ILS ONT TRANSFORMÉ LEUR VIE</h2>
+     <div class="grid md:grid-cols-3 gap-8"><!-- Témoignage 1 -->
+      <div class="bg-white rounded-2xl p-6 shadow-xl border-l-4 border-green-500">
+       <div class="text-center mb-4">
+        <div class="w-16 h-16 bg-green-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white font-bold text-2xl">
+         M
+        </div>
+        <h3 class="font-bold text-lg">Marie Dubois</h3>
+        <p class="text-gray-600 text-sm">Mère de famille, Lyon</p>
+       </div>
+       <p class="text-gray-700 mb-4 italic">"En 3 mois, j'ai généré plus de revenus qu'en 2 ans à mon ancien travail. Le système fait vraiment tout automatiquement!"</p>
+       <div class="text-center">
+        <p class="text-3xl font-black text-green-600">€127,450</p>
+        <p class="text-sm text-gray-600">en 6 mois</p>
+       </div>
+      </div><!-- Témoignage 2 -->
+      <div class="bg-white rounded-2xl p-6 shadow-xl border-l-4 border-blue-500">
+       <div class="text-center mb-4">
+        <div class="w-16 h-16 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white font-bold text-2xl">
+         P
+        </div>
+        <h3 class="font-bold text-lg">Pierre Martin</h3>
+        <p class="text-gray-600 text-sm">Ex-salarié, Marseille</p>
+       </div>
+       <p class="text-gray-700 mb-4 italic">"J'étais sceptique au début, mais les résultats parlent d'eux-mêmes. Liberté financière enfin atteinte!"</p>
+       <div class="text-center">
+        <p class="text-3xl font-black text-blue-600">€89,200</p>
+        <p class="text-sm text-gray-600">en 4 mois</p>
+       </div>
+      </div><!-- Témoignage 3 -->
+      <div class="bg-white rounded-2xl p-6 shadow-xl border-l-4 border-purple-500">
+       <div class="text-center mb-4">
+        <div class="w-16 h-16 bg-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white font-bold text-2xl">
+         S
+        </div>
+        <h3 class="font-bold text-lg">Sophie Leroy</h3>
+        <p class="text-gray-600 text-sm">Étudiante, Paris</p>
+       </div>
+       <p class="text-gray-700 mb-4 italic">"Même en étant étudiante, j'arrive à générer un revenu stable. Le système s'occupe de tout pendant mes cours!"</p>
+       <div class="text-center">
+        <p class="text-3xl font-black text-purple-600">€45,800</p>
+        <p class="text-sm text-gray-600">en 2 mois</p>
+       </div>
+      </div>
+     </div><!-- CTA répété -->
+     <div class="text-center mt-12"><button class="bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white font-black text-xl px-10 py-5 rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300" aria-label="Rejoindre le programme pour obtenir les mêmes résultats"> ⚡ JE VEUX LES MÊMES RÉSULTATS </button>
+     </div>
+    </div>
+   </section><!-- Section valeurs -->
+   <section class="bg-white py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+     <h2 id="values-title" class="text-4xl font-black text-center text-black mb-12">NOS VALEURS FONDAMENTALES</h2>
+     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-6 text-center border-2 border-red-200">
+       <div class="text-4xl mb-4">
+        📈
+       </div>
+       <h3 class="font-bold text-lg mb-2 text-red-700">PROGRÈS</h3>
+       <p class="text-gray-700 text-sm">Évolution constante vers vos objectifs financiers</p>
+      </div>
+      <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 text-center border-2 border-green-200">
+       <div class="text-4xl mb-4">
+        ⚖️
+       </div>
+       <h3 class="font-bold text-lg mb-2 text-green-700">ÉQUILIBRE</h3>
+       <p class="text-gray-700 text-sm">Vie professionnelle et personnelle harmonieuse</p>
+      </div>
+      <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 text-center border-2 border-blue-200">
+       <div class="text-4xl mb-4">
+        🤝
+       </div>
+       <h3 class="font-bold text-lg mb-2 text-blue-700">INTÉGRITÉ</h3>
+       <p class="text-gray-700 text-sm">Transparence totale dans nos méthodes</p>
+      </div>
+      <div class="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-6 text-center border-2 border-yellow-200">
+       <div class="text-4xl mb-4">
+        🚀
+       </div>
+       <h3 class="font-bold text-lg mb-2 text-yellow-700">OPPORTUNITÉ</h3>
+       <p class="text-gray-700 text-sm">Saisir les meilleures chances du marché</p>
+      </div>
+      <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 text-center border-2 border-purple-200">
+       <div class="text-4xl mb-4">
+        🎉
+       </div>
+       <h3 class="font-bold text-lg mb-2 text-purple-700">PLAISIR</h3>
+       <p class="text-gray-700 text-sm">Profiter du chemin vers le succès</p>
+      </div>
+      <div class="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl p-6 text-center border-2 border-indigo-200">
+       <div class="text-4xl mb-4">
+        💎
+       </div>
+       <h3 class="font-bold text-lg mb-2 text-indigo-700">EXCELLENCE</h3>
+       <p class="text-gray-700 text-sm">Qualité premium dans chaque détail</p>
+      </div>
+     </div>
+     <div class="bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl p-8 mt-12 border-l-4 border-orange-500">
+      <h3 class="font-bold text-xl mb-4 text-gray-800">💡 Pourquoi nous faisons cela ?</h3>
+      <p class="text-gray-700 leading-relaxed">Nous croyons que chacun mérite la liberté financière sans sacrifier sa vie de famille ou ses passions. Notre mission est de démocratiser l'accès aux business automatisés pour que vous puissiez enfin <strong>vivre la vie que vous méritez</strong>.</p>
+     </div>
+    </div>
+   </section><!-- CTA final -->
+   <section class="bg-gradient-to-r from-red-600 to-orange-500 py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+     <h2 class="text-4xl md:text-5xl font-black text-white mb-6">PRÊT À CHANGER VOTRE VIE ?</h2>
+     <p class="text-xl text-white mb-8 opacity-90">Rejoignez les milliers de personnes qui ont déjà transformé leur situation financière</p><button class="bg-white text-red-600 font-black text-2xl px-12 py-6 rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 pulse-glow" aria-label="Commencer maintenant avec Freedom Xcelerator"> 🔥 COMMENCER MAINTENANT </button>
+     <div class="mt-8 flex justify-center items-center space-x-8 text-white">
+      <div class="text-center">
+       <p class="text-2xl font-bold">⏰</p>
+       <p class="text-sm">Accès immédiat</p>
+      </div>
+      <div class="text-center">
+       <p class="text-2xl font-bold">🛡️</p>
+       <p class="text-sm">Garantie 30j</p>
+      </div>
+      <div class="text-center">
+       <p class="text-2xl font-bold">📞</p>
+       <p class="text-sm">Support 24/7</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Footer / Mentions légales -->
+   <footer class="bg-gray-100 py-8 px-4">
+    <div class="max-w-6xl mx-auto">
+     <div class="bg-white rounded-lg p-6 shadow-sm border">
+      <h3 class="font-bold text-lg mb-4 text-gray-800">📋 Mentions importantes</h3>
+      <div id="disclaimer-text" class="text-sm text-gray-600 leading-relaxed space-y-2">
+       <p><strong>Disclaimer :</strong> Aucun résultat n'est garanti. Les témoignages présentés sont des cas individuels et ne représentent pas les résultats typiques. Ce programme n'est ni un MLM, ni une franchise, ni un système pyramidal.</p>
+       <p><strong>Responsabilité :</strong> Votre succès dépend de votre engagement personnel, de votre situation financière, de vos connaissances et compétences. Nous ne pouvons garantir que vous obtiendrez des résultats similaires.</p>
+       <p><strong>Plateforme :</strong> JVZoo et ses affiliés n'endorsent pas le contenu de cette page. Cette offre est indépendante de toute plateforme de paiement utilisée.</p>
+      </div>
+      <div class="mt-6 pt-4 border-t border-gray-200 flex flex-wrap justify-center space-x-6 text-xs text-gray-500"><a href="#" class="hover:text-gray-700 transition-colors">Politique de confidentialité</a> <a href="#" class="hover:text-gray-700 transition-colors">Conditions générales</a> <a href="#" class="hover:text-gray-700 transition-colors">Contact</a> <a href="#" class="hover:text-gray-700 transition-colors">Remboursement</a>
+      </div>
+      <p class="text-center text-xs text-gray-400 mt-4">© 2024 Freedom Xcelerator. Tous droits réservés.</p>
+     </div>
+    </div>
+   </footer>
+  </main>
+  <script>
+        // Configuration par défaut
+        const defaultConfig = {
+            alert_message: "⚠️ ATTENTION: Les tarifs augmentent dans 48h - Économisez 67% MAINTENANT! ⚠️",
+            main_title: "BUSINESS AUTOMATISÉ FAIT POUR VOUS",
+            main_subtitle: "Système complet sans vente, sans configuration, sans stress. Nous faisons TOUT pour vous - Vous récoltez les bénéfices.",
+            bonus_amount: "$179,037",
+            cta_button: "OBTENIR UN ACCÈS INSTANTANÉ",
+            values_title: "NOS VALEURS FONDAMENTALES",
+            disclaimer_text: "Aucun résultat n'est garanti. Les témoignages présentés sont des cas individuels et ne représentent pas les résultats typiques. Ce programme n'est ni un MLM, ni une franchise, ni un système pyramidal."
+        };
+
+        // Fonction de mise à jour de l'interface
+        async function onConfigChange(config) {
+            // Mise à jour des textes
+            document.getElementById('alert-message').textContent = config.alert_message || defaultConfig.alert_message;
+            
+            // Mise à jour du titre principal avec gestion du span gradient
+            const mainTitle = config.main_title || defaultConfig.main_title;
+            const titleElement = document.getElementById('main-title');
+            if (mainTitle.includes('FAIT POUR VOUS')) {
+                titleElement.innerHTML = mainTitle.replace('FAIT POUR VOUS', '<span class="gradient-text">FAIT POUR VOUS</span>');
+            } else {
+                titleElement.textContent = mainTitle;
+            }
+            
+            document.getElementById('main-subtitle').textContent = config.main_subtitle || defaultConfig.main_subtitle;
+            document.getElementById('bonus-amount').textContent = config.bonus_amount || defaultConfig.bonus_amount;
+            document.getElementById('main-cta').textContent = `🛒 ${config.cta_button || defaultConfig.cta_button}`;
+            document.getElementById('values-title').textContent = config.values_title || defaultConfig.values_title;
+            
+            // Mise à jour du disclaimer
+            const disclaimerElement = document.getElementById('disclaimer-text');
+            const disclaimerText = config.disclaimer_text || defaultConfig.disclaimer_text;
+            
+            // Vider le contenu existant
+            disclaimerElement.innerHTML = '';
+            
+            // Créer les paragraphes de manière sécurisée
+            const p1 = document.createElement('p');
+            const strong1 = document.createElement('strong');
+            strong1.textContent = 'Disclaimer : ';
+            p1.appendChild(strong1);
+            p1.appendChild(document.createTextNode(disclaimerText));
+            
+            const p2 = document.createElement('p');
+            const strong2 = document.createElement('strong');
+            strong2.textContent = 'Responsabilité : ';
+            p2.appendChild(strong2);
+            p2.appendChild(document.createTextNode('Votre succès dépend de votre engagement personnel, de votre situation financière, de vos connaissances et compétences. Nous ne pouvons garantir que vous obtiendrez des résultats similaires.'));
+            
+            const p3 = document.createElement('p');
+            const strong3 = document.createElement('strong');
+            strong3.textContent = 'Plateforme : ';
+            p3.appendChild(strong3);
+            p3.appendChild(document.createTextNode('JVZoo et ses affiliés n\'endorsent pas le contenu de cette page. Cette offre est indépendante de toute plateforme de paiement utilisée.'));
+            
+            disclaimerElement.appendChild(p1);
+            disclaimerElement.appendChild(p2);
+            disclaimerElement.appendChild(p3);
+        }
+
+        // Fonctions pour les capacités d'édition
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [],
+                borderables: [],
+                fontEditable: undefined,
+                fontSizeable: undefined
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["alert_message", config.alert_message || defaultConfig.alert_message],
+                ["main_title", config.main_title || defaultConfig.main_title],
+                ["main_subtitle", config.main_subtitle || defaultConfig.main_subtitle],
+                ["bonus_amount", config.bonus_amount || defaultConfig.bonus_amount],
+                ["cta_button", config.cta_button || defaultConfig.cta_button],
+                ["values_title", config.values_title || defaultConfig.values_title],
+                ["disclaimer_text", config.disclaimer_text || defaultConfig.disclaimer_text]
+            ]);
+        }
+
+        // Gestion des clics sur les boutons CTA
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctaButtons = document.querySelectorAll('button');
+            ctaButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Animation de chargement
+                    const originalText = this.textContent;
+                    this.textContent = '⏳ REDIRECTION...';
+                    this.style.background = 'linear-gradient(45deg, #10b981, #059669)';
+                    
+                    // Redirection vers Freedom Xcelerator
+                    setTimeout(() => {
+                        window.open('https://freedomxcelerator.com/join-here', '_blank', 'noopener,noreferrer');
+                        
+                        // Retour au texte original
+                        setTimeout(() => {
+                            this.textContent = originalText;
+                            this.style.background = '';
+                        }, 1000);
+                    }, 800);
+                });
+            });
+
+            // Initialisation du SDK
+            if (window.elementSdk) {
+                window.elementSdk.init({
+                    defaultConfig,
+                    onConfigChange,
+                    mapToCapabilities,
+                    mapToEditPanelValues
+                });
+            }
+        });
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'997dc5a207608d3c',t:'MTc2MjAyNTA2Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
